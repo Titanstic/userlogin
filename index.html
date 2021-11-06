@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- custom css  -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <!-- jquery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <!-- custom js  -->
+    <script src="./js/app.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start First container  -->
+        <div class="container-first">
+            <div class="signup">
+                <p class="welcome-header">Welcome Back!</p>
+                <p class="welcome-body">
+                    TO keep connected with us please login with your person info
+                </p>
+                <p class="logintoggle">SGIN IN</p>
+            </div>
+            <div class="login">
+                <p class="header">Sign in to CName</p>
+                <div class="connect-link">
+                    <div class="link-icon">
+                        <a href="#"> <i class="fab fa-facebook"></i></a>
+                        <a href="#"> <i class="fab fa-google"></i></a>
+                        <a href="#"> <i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>or use your email account</p>
+                </div>
+                <form action="" method="post" class="login-form">
+                    <div class="data-input">
+                        <input type="text" class="input" name="useremail" placeholder="Email" autocomplete="off" required />
+                        <div class="placeholder">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="data-input">
+                        <input type="password" class="input" id="loginPassword" name="password" placeholder="Password" autocomplete="off" required />
+                        <div class="placeholder">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="eye login-eye">
+                            <i class="fas fa-eye active"></i>
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="forgot">Forgot your password?</a>
+                    <button type="submit">SIGN IN</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- End First container  -->
+
+        <!-- Start Second container  -->
+        <div class="container-second">
+            <div class="signup">
+                <p class="header">Create Account</p>
+                <div class="connect-link">
+                    <div class="link-icon">
+                        <a href="#"> <i class="fab fa-facebook"></i></a>
+                        <a href="#"> <i class="fab fa-google"></i></a>
+                        <a href="#"> <i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>or use your email for registration</p>
+                </div>
+                <form action="#" method="post" class="login-form">
+                    <div class="data-input">
+                        <input type="text" class="input" name="username" placeholder="Name" autocomplete="off" />
+                        <div class="placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="data-input">
+                        <input type="text" class="input" name="useremail" placeholder="Email" autocomplete="off" />
+                        <div class="placeholder">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="data-input">
+                        <input type="password" class="input" name="password" id="signpassword" placeholder="Password" autocomplete="off" />
+                        <div class="placeholder">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="eye sign-eye">
+                            <i class="fas fa-eye signeyei active"></i>
+                            <i class="fas fa-eye-slash signeyeslashi"></i>
+                        </div>
+                    </div>
+                    <button type="submit">SIGN UP</button>
+                </form>
+            </div>
+            <div class="login">
+                <p class="welcome-header">Hello Friend !</p>
+                <p class="welcome-body">
+                    Enter your personal details and start journey with us
+                </p>
+                <p class="signtoggle">SGIN UP</p>
+            </div>
+        </div>
+
+        <!-- End Second container  -->
+        <!-- Start Layer -->
+        <div class="overlayer-green"></div>
+        <div class="overlayer-white"></div>
+        <div class="overlayer-white2"></div>
+        <!-- End Layer  -->
+    </div>
+</body>
+
+</html>

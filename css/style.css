@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    height: 60vh;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Start first Container */
+
+.container-first {
+    width: 60%;
+    height: 100%;
+    color: #2e2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.container-first.sign {
+    width: 40%;
+    color: #f4f4f4;
+    z-index: 3;
+}
+
+.container-first>* {
+    text-align: center;
+}
+
+.container-first.login {
+    width: 100%;
+}
+
+
+/* End first Container */
+
+
+/* Start Second Container */
+
+.container-second {
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.container-second.sign {
+    width: 60%;
+    z-index: 0;
+}
+
+.container-second>* {
+    text-align: center;
+}
+
+
+/* End Second Container */
+
+.signup {
+    display: none;
+}
+
+.login {
+    display: block;
+}
+
+.header {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #155fbf;
+    margin: 6% 0;
+}
+
+.connect-link {
+    margin-bottom: 10px;
+}
+
+.connect-link .link-icon:first-child {
+    margin-left: 23px;
+}
+
+.connect-link .link-icon>* {
+    font-size: 2rem;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.connect-link p {
+    color: #777;
+}
+
+
+/* Start Form  */
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-form .data-input {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.login-form .data-input .placeholder {
+    font-size: 1.2rem;
+    color: #444;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.login-form .input {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    padding-left: 35px;
+    outline: none;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.eye>* {
+    color: #888;
+    cursor: pointer;
+    display: block;
+}
+
+.eye .fa-eye.active {
+    display: none;
+}
+
+.eye .fa-eye-slash.active {
+    display: none;
+}
+
+.forgot {
+    color: blue;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    background-color: #29a31d;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* End Form  */
+
+.welcome-header {
+    color: #f4f4f4;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.welcome-body {
+    color: #f4f4f4;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.signtoggle,
+.logintoggle {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #f4f4f4;
+    display: inline;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Start layer  Green*/
+
+.overlayer-green {
+    width: 40%;
+    height: 100%;
+    background-color: #29a31d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.overlayer-green.ani {
+    animation: overlayer 1s linear 1 forwards;
+}
+
+@keyframes overlayer {
+    0% {
+        right: 0;
+    }
+    50% {
+        width: 45%;
+    }
+    100% {
+        right: 60%;
+    }
+}
+
+.overlayer-green.anirev {
+    animation: overlayerrev 1s linear 1 forwards;
+}
+
+@keyframes overlayerrev {
+    0% {
+        right: 60%;
+    }
+    50% {
+        width: 45%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+
+
+/* End layer */
+
+
+/* Start Layer White  */
+
+.overlayer-white {
+    display: none;
+}
+
+.overlayer-white2 {
+    display: none;
+}
+
+.overlayer-white.active {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background-color: #f4f4f4;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: 1;
+}
+
+.overlayer-white2.active {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background-color: #f4f4f4;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlayer-white.active.ani {
+    animation: overlayerwhite 1.5s linear 1 forwards;
+}
+
+.overlayer-white2.active.ani {
+    animation: overlayerwhite2 1.5s linear 1 forwards;
+}
+
+@keyframes overlayerwhite {
+    0% {
+        left: 40%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes overlayerwhite2 {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -60%;
+    }
+}
+
+
+/* End Layer White  */
